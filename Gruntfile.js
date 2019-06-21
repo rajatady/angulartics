@@ -66,7 +66,7 @@ module.exports = function(grunt) {
      if (!target) {
        target = 'patch';
      }
-     return grunt.task.run('bump-only:' + target, 'default', 'bump-commit', 'shell:publish');
+     return grunt.task.run('bump-only:' + target, 'default', 'bump-commit');
    });
 
 };
